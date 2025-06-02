@@ -53,8 +53,26 @@ let negValue = -value
 
 
 
-str1 = "Hello"
-str2 = " Nikhil"
-str3 = str1+str2
-console.log(str3)
-console.log(str1+str2)
+// str1 = "Hello"
+// str2 = " Nikhil"
+// str3 = str1+str2
+// console.log(str3)
+// console.log(str1+str2)
+
+
+// console.log("1" + 2)
+// console.log(1 + "2")
+// console.log("1" + 2 + 2)
+// console.log(1 + "2" + 1)
+// console.log(1+2+"2")
+
+// console.log((3 + 4) * 5 % 3)
+
+
+
+// console.log(+"")
+// console.log(+true)
+
+let gameCounter = 100
+++gameCounter
+console.log(gameCounter)
