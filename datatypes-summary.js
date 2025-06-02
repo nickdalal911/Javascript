@@ -36,3 +36,29 @@ const myFunction = function(){
 console.log(typeof(myObject))       // object
 console.log(typeof(myFunction))     // function
 console.log(typeof(outsideTemp))    // by checking with typeof null value it gives object
+
+
+
+
+//   +++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// stack(primitive, heap(non primitive)
+
+let myYoutubeName = "Nikhil Dalal"
+let anotherName = myYoutubeName
+anotherName = "Hero motoCorp"
+
+console.log(anotherName)
+console.log(myYoutubeName)
+
+let user1 = {
+   email: "dfsfs32@gmail.com",
+   upiId: "user@okhdfc.com",
+}
+
+let user2 = user1
+user2.email = "nikhil22csu@gmail.com"
+
+console.log(user2.email)
+console.log(user1.email)
