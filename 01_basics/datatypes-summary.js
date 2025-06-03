@@ -40,7 +40,7 @@ console.log(typeof(outsideTemp))    // by checking with typeof null value it giv
 
 
 
-//   +++++++++++++++++++++++++ Memory ++++++++++++++++++++++++
+//   +++++++++++++++++++++++++ Memory +++++++++++++++++++++++++
 
 // stack(primitive, heap(non primitive)
 
