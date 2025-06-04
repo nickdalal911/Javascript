@@ -28,9 +28,9 @@ console.log(newStringOne.trim())            // it remove spaces in a string
 
 
 const url = "https://nikhil.com/nikhil%20dalal"
-console.log(url.replace('%20', '-'))
+console.log(url.replace('%20', '-'))         // it replaces the value from the original value to other you want to change
 
-console.log(url.includes("nikhil"))
+console.log(url.includes("nikhil"))      // it checks wheather it is present in the string or not and answer in true or false
 console.log(url.includes("meds"))
 
-console.log(gameName.split("-"))
+console.log(gameName.split("-"))     // it split the string on the basis of you want to give or saparate
