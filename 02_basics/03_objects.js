@@ -31,8 +31,8 @@ JsUser.greetings = function(){
     console.log("Hello Js User")
 }
 
-console.log(JsUser.greetings())
-
 JsUser.greetings2 = function(){
-    console.log("Nikhil")
+    console.log(`Hello Js User ${this.name}`)
 }
+console.log(JsUser.greetings())
+console.log(JsUser.greetings2())
