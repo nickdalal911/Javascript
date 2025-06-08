@@ -43,4 +43,36 @@ function loginUserMessage(username){            // if we give the value of usern
 
 // loginUserMessage("Nikhil")                  // it will not print the value
 // console.log(loginUserMessage("Nikhil"))        // this will print      
-console.log(loginUserMessage())                // if you don't pass the argument then it will return undefined
+// console.log(loginUserMessage())                // if you don't pass the argument then it will return undefined
+
+
+function calculateCartPrice(...num1) {             // here (...) is called a rest operator not spread oprator
+    return num1
+}
+// console.log(calculateCartPrice(200, 400, 500))     // here rest operator will store all the values of cart in an array automatically
+
+function calulateCart(val1, val2, ...num1){
+    return num1
+}
+// console.log(calulateCart(200, 300, 500, 2000, 1000, 33))
+
+const user = {
+    username: "Nikhil",
+    price: 100
+}
+
+function handleObject(anyobject) {
+     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+// handleObject(user)
+
+handleObject({
+    username: "Sam",
+    price: 199
+})
+const newArray = [200, 300, 400]
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+// console.log(returnSecondValue(newArray))
+console.log(returnSecondValue([200, 300, 400]))
