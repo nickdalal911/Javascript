@@ -19,4 +19,21 @@ function chai(){
     let username = "Nikhil"
     console.log(this.username);
 }
-chai();
+// chai();
+
+// arrow function
+
+// const addTwo = (num1, num2) => {
+//     return num1 + num2                                // explicit return
+// }
+
+// const addTwo = (num1, num2) => num1 + num2           // implicit return in this you doesnt have to write the return just for single statement
+const addTwo = (num1, num2) => (num1 + num2)         // again doesnt have to write return
+console.log(addTwo(3,4))
+
+const user1 = (num1, num2) => ({username: "Nikhil"})
+
+console.log(user1(3,4))
+
+// const myArray = [3,4,5,6,3]
+// myArray.forEach(() => {})                   // arrow function can be written like this also
