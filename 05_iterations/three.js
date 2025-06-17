@@ -26,6 +26,17 @@ map.set('USA', 'United States of America')
 // console.log(map)
 
 
-for(const key of  map){
-    console.log(key)
+for(const [key, value] of  map){
+    // console.log(key, ":-", value)           // will only print unique values not duplicate
+    
 }
+
+
+const myGames = {
+    game1 : 'NFS',
+    game2 : 'tomb raider'
+}
+
+// for(const [key, value] of Object){
+//      console.log(key,':-', value)
+// }
