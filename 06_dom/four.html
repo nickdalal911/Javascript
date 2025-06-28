@@ -7,17 +7,56 @@
 </head>
 <body style="background-color: #212121; color: #fff;">
     <ul class="language">
-        <li>Javascript</li>
+        <!-- <li>Javascript</li> -->
+    </ul>
+
+
+
+
+    <ul class="avengers">
+        <li>Thor</li>
+    </ul>
+
+    <ul class="hotels">
+        <li>Queen of Hills</li>
     </ul>
 </body>
 <script>
-    function addLanguage(langName){
-        const li = document.createElement('li');
-        li.innerHTML = `${langName}`
-        document.querySelector('.language').appendChild(li)
-    }
-    addLanguage("Python")
-    addLanguage("Typescript")
-    addLanguage("Java")
+    // function addLanguage(langName){
+    //     const li = document.createElement('li');
+    //     li.innerHTML = `${langName}`
+    //     document.querySelector('.language').appendChild(li)
+    // }
+    // addLanguage("Python")
+    // addLanguage("Typescript")
+    // addLanguage("Java")
+
+
+     function addAvengers(avengerName){
+          const heros = document.createElement('li');
+          heros.innerHTML = `${avengerName}`
+          document.querySelector('.avengers').appendChild(heros)
+     }
+
+     addAvengers("Iron Man")
+     addAvengers("Captain America")
+     addAvengers("Hawkeye")
+
+
+
+
+function addHotels(hotelName){
+    const hotel = document.createElement("li")
+    hotel.innerHTML = `${hotelName}`
+    document.querySelector('.hotels').appendChild(hotel)
+}
+addHotels("ITC Welcome")
+addHotels("Taj Hotel")
+
+
+
+
+
+
 </script>
 </html>
