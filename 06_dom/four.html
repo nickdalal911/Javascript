@@ -7,7 +7,7 @@
 </head>
 <body style="background-color: #212121; color: #fff;">
     <ul class="language">
-        <!-- <li>Javascript</li> -->
+        <li>Javascript</li>
     </ul>
 
 
@@ -22,14 +22,14 @@
     </ul>
 </body>
 <script>
-    // function addLanguage(langName){
-    //     const li = document.createElement('li');
-    //     li.innerHTML = `${langName}`
-    //     document.querySelector('.language').appendChild(li)
-    // }
-    // addLanguage("Python")
-    // addLanguage("Typescript")
-    // addLanguage("Java")
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("Typescript")
+    addLanguage("Java")
 
 
      function addAvengers(avengerName){
@@ -54,9 +54,36 @@ addHotels("ITC Welcome")
 addHotels("Taj Hotel")
 
 
+// for large projects in optimize way
+
+function addOptiLanguage(langName){
+   const li = document.createElement('li');
+   li.appendChild(document.createTextNode(langName))
+   document.querySelector('.language').appendChild(li)
+}
+addOptiLanguage("golang")
+
+
+// Edit
+const secondLang = document.querySelector("li:nth-child(2)")
+// secondLang.innerHTML = "Mojo"  // okay but not optimised way
+
+const newLi = document.createElement('li')
+newLi.textContent = "mojo"
+secondLang.replaceWith(newLi)
 
 
 
 
+// edit
+
+const firstLang = document.querySelector("li:first-child")
+firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+// remove
+
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
 </script>
 </html>
