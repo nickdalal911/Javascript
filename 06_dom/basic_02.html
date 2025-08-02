@@ -1,0 +1,61 @@
+<!--  changing text Content  (.textContent and .innerHTML)
+ changing attributes    (.setAttribute() and .getAttribute())
+ changing style         (backgroundColor instead of background-color) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="my-para">Old text here.</p>
+    <div id="my-div">Content goes here.</div>
+
+    <!-- <img id="my-image" src="old.jpg" alt="Old Image"> -->
+    <a id="my-link" href="old-link.html">Link</a>
+
+
+    <div id="my-box">This is a box.</div>
+</body>
+<script>
+    // now text content
+    const para = document.getElementById('my-para');
+    para.textContent = "New text content!";
+    console.log(para.textContent);
+
+
+    const div = document.getElementById('my-div')
+    div.textContent = "Write Here!"
+    console.log(div.textContent)
+
+    // now attributes
+    const img = document.getElementById('my-image')
+    // img.setAttribute('src','new.jpg')  // change the img sorce
+    // img.setAttribute('alt','New Image')  // change the alt text
+
+
+    const link = document.getElementById('my-link')
+    link.setAttribute('href','https://www.google.com')
+    link.textContent = "go to google"
+
+    // console.log(img.getAttribute('src'));
+
+
+
+
+
+
+    // changing styles
+    const box = document.getElementById('my-box')
+    box.style.backgroundColor = 'lightblue'
+    box.style.color = 'darkblue'
+    box.style.fontSize = '20px'
+    box.style.padding = '10px'
+
+
+    
+</script>
+</html>
