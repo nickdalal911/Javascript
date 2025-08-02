@@ -1,0 +1,65 @@
+// selecting html elements
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="page-title">My Awesome Page</h1>
+    <h1 class="heading">Main Heading</h1>
+    <p id="first-paragraph">Hello there!</p>
+    <button class="my-btn primary">Click Me</button>
+
+
+    <p class="item">Item 1</p>
+    <p class="item">Item 2</p>
+    <div>
+    <p class="item">Item 3</p>
+    </div>
+</body>
+
+<script>
+    // selecting by document.getElementById()
+    const mainTitle = document.getElementById('page-title')
+    console.log(mainTitle)
+    console.log(mainTitle.textContent)
+    
+    console.log(mainTitle.innerHTML)
+
+    mainTitle.innerHTML = "<strong>Bold Text!</strong>"
+    console.log(mainTitle.innerHTML)
+
+
+    const startParagraph = document.getElementById('first-paragraph')
+    console.log(startParagraph)
+    console.log(startParagraph.textContent)
+
+    // selecting by document.querySelector()
+    const heading = document.querySelector('.heading')
+    console.log(heading.textContent)
+
+
+    const firstButton = document.querySelector('button')
+    console.log(firstButton.outerHTML)
+
+
+    const primaryBtn = document.querySelector('.my-btn.primary')
+    console.log(primaryBtn)
+
+
+    // selecting by document.querySelectorAll()
+    const allItems = document.querySelectorAll(".item")
+    console.log(allItems)
+    allItems.forEach( item => {
+        console.log(item.textContent)
+    })
+ 
+
+
+
+ 
+</script>
+</html>
