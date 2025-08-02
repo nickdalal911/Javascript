@@ -1,0 +1,33 @@
+<!--  adding/ removing classes(.classList property) -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .highlight {
+    border: 2px solid yellow;
+    }
+    .active {
+    background-color: green;
+    color: white;
+    }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my-element" class="highlight">Hello</div>
+</body>
+<script>
+
+const el = document.querySelector('#my-element')
+el.classList.add('active') // now has 'highlight active' classes
+console.log(el.classList)  // DOMTokenList(2)  ['highlight','active']
+
+el.classList.remove('highlight')
+console.log(el.classList)
+
+
+</script>
+</html>
