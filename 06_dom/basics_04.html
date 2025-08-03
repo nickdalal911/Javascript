@@ -6,13 +6,65 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="container">
+    <p>Existing content.</p>
+    </div>
+
+
+    <ul id="my-list">
+    <li id="item1">Item 1</li>
+    <li id="item2">Item 2</li>
+    </ul>
 </body>
 <script>
+    // creating new elements
+
     const newParagraph = document.createElement('p')
     newParagraph.textContent = "I created a new element."
     newParagraph.style.color = "purple"
     console.log(newParagraph)
     console.log(newParagraph.textContent)
+
+    newParagraph.remove();
+
+    
+
+    const newDiv = document.createElement('div')
+    // newDiv.innerHTML = "<p>Hi how are you</p>"
+    const paragraphElement = document.createElement('p')
+    paragraphElement.textContent = "Newly created element for apppend child."
+  
+   // adding new element 
+    newDiv.appendChild(paragraphElement)
+    console.log(newDiv.innerHTML)
+    console.log(newDiv.textContent)
+
+
+
+
+    // adding new elements
+
+    const container = document.querySelector("#container")
+    const newDivHello = document.createElement('div')
+    newDivHello.textContent = "this is a dinamically added div."
+
+    container.appendChild(newDivHello)
+    // console.log(container.innerHTML)
+    // console.log(container.textContent)
+    console.log(newDivHello.textContent)
+
+
+
+    // removing elements
+
+    const list = document.querySelector('#my-list')
+    const itemToRemove = document.querySelector('#item1')
+
+    list.removeChild(itemToRemove)
+
+
+
+
+
 </script>
 </html>
