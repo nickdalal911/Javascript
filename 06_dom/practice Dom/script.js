@@ -26,3 +26,13 @@ newLi.textContent = "New Dynamic Item"
 unList.appendChild(newLi)
 
 // 5
+// Step 1: Select the parent element, which is the <ul>.
+unList = document.querySelector('#item-list')
+// Step 2: Find the last <li> child.
+newLi = unList.lastElementChild
+// Check if the item exists before trying to remove it
+if(newLi){
+    // Step 3: Call the .remove() method directly on the child element itself.
+  // This is a simpler and often preferred way to remove an element.
+    newLi.remove()
+}
