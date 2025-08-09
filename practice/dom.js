@@ -34,3 +34,19 @@ function displayProducts(productsArray){
 }
 
 displayProducts(products)
+
+// 3.
+
+function countEvenAndGreaterThanTen(numberArray){
+    let count = 0
+    for(i =0; i < numberArray.length; i++){
+        if(numberArray[i] % 2===0 && numberArray[i] > 10){
+            count++
+            
+        }
+    }
+    return count
+}
+const array = [12, 5, 22, 10, 18, 7, 30]
+const result = countEvenAndGreaterThanTen(array)
+console.log(result)
